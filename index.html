@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+</head>
+<body>
+    <!--Top nav-->
+    <nav class="navbar-top">
+            <a href="mailto:your_email@example.com"><i class="fa fa-fw fa-envelope"></i> your_email@example.com</a>
+            <a href="081-234-567-890"><i class="fa fa-fw fa-phone"></i> 081-234-567-890</a>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                <input class="search" type="text" placeholder="Search..">
+            </div>
+        </div>
+    </nav>
+    <!--Main nav-->
+    <nav class="navbar-main">
+        <div class="maincontainer">
+            <img src="logo.png" alt="Logo" class="navbar-logo">
+            <a href="index.html"><i class="fa-solid fa-house"></i> About</a>
+            <a href="catalog.html" class="active"><i class="fa-solid fa-bag-shopping"></i> Start Shopping</a>
+            <a href="service.html"><i class="fa-solid fa-truck-fast"></i> Services</a>
+            <a class="login-btn"  href="#"><i class="fa-solid fa-user"></i> Login</a>
+        </div>
+    </nav>
+    <!--Content-->
+<header class="header-section">
+    <div class="header-container">
+        <div class="header-data">
+            <h1 class="header-title">
+                    Unique & <br> Stylish <span>Summer</span> <br> <span>Collection</span>
+            </h1>
+            <p class="header-description">Phasellus fermentum malesuada phasellus netus dictum aenean placerat egestas amet. Ornare taciti semper dolor tristique morbi. Sem leo tincidunt aliquet semper eu lectus scelerisque quis. Sagittis.</p>
+            <a href="catalog.html" class="button">Shop Now!</a>
+        </div>
+    </div>
+</header>
+<section class="about">
+    <div class="about-container">
+        <div class="about-content">
+            <div class="about-text">
+                <h1>Hi! we're <span>Summer</span> Catalog</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+            <div class="about-img">
+                <img src="shop_07.jpg" alt="about">
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section class="cards-section">
+    <h1>What <span>We</span> Offer</h1>
+  <div class="cards-container">
+    <div class="card">
+      <img src="category_img_01.jpg" alt="Card 1">
+      <h3>Waterproof Watch</h3>
+      <p>Short description for card 1.</p>
+      <a href="#" class="card-btn">Shop Now!</a>
+    </div>
+    <div class="card">
+      <img src="category_img_02.jpg" alt="Card 2">
+      <h3>Sneaky Sneakers</h3>
+      <p>Short description for card 2.</p>
+      <a href="#" class="card-btn">Shop Now!</a>
+    </div>
+        <div class="card">
+      <img src="category_img_03.jpg" alt="Card 3">
+      <h3>Sunglasses</h3>
+      <p>Short description for card 3.</p>
+      <a href="#" class="card-btn">Shop Now!</a>
+    </div>
+  </div>
+</section>
+<section class="features-section">
+  <h1>Why <span>YOU</span> Should Pick <span>US.</span></h1>
+  <div class="features-image">
+    <img src="Tanpa judul (1024 x 800 piksel).png" alt="Shoe">
+  </div>
+  <div class="features-cards">
+    <div class="feature-card">
+      <h3>SIMPLICITY IN DESIGN</h3>
+      <p>No flashy logos. No senseless details. Just the world’s most comfortable shoes, made naturally and designed practically. It’s that simple.</p>
+    </div>
+    <div class="feature-card">
+      <h3>CONFIDENCE IN COMFORT</h3>
+      <p>Trying is believing. Give our shoes a shot for 30 days, and if you’re not walking on cloud nine, we’ll take them back—no questions asked.</p>
+    </div>
+    <div class="feature-card">
+      <h3>MADE FROM NATURE</h3>
+      <p>The footwear industry often overlooks Mother Nature’s materials in favor of cheaper, synthetic alternatives. We think it’s time to change that.</p>
+    </div>
+  </div>
+</section>
+<div id="login-popup" class="popup-overlay">
+  <div class="popup-box">
+    <div class="popup-header">
+      <div id="form-title">Login</div>
+      <button id="popup-close" class="close-btn">✖</button>
+    </div>
+
+    <form class="popup-form" id="login-form">
+      <div class="form-group">
+        <input type="text" required />
+        <label>Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" required />
+        <label>Password</label>
+      </div>
+      <button type="submit" class="popup-btn">Login</button>
+      <p class="form-switch">Belum punya akun? <a href="#" onclick="switchToRegister()">Daftar</a></p>
+    </form>
+
+    <form class="popup-form hidden" id="register-form">
+      <div class="form-group">
+        <input type="text" required />
+        <label>Username</label>
+      </div>
+      <div class="form-group">
+        <input type="text" required />
+        <label>Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" required />
+        <label>Password</label>
+      </div>
+      <button type="submit" class="popup-btn">Daftar</button>
+      <p class="form-switch">Sudah punya akun? <a href="#" onclick="switchToLogin()">Login</a></p>
+    </form>
+  </div>
+</div>
+    <!--Footer-->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 Summer Catalog. All rights reserved.
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const loginPopup = document.getElementById("login-popup");
+  const loginBtn = document.querySelector(".login-btn");
+  const closeBtn = document.getElementById("popup-close");
+  const loginForm = document.getElementById("login-form");
+  const registerForm = document.getElementById("register-form");
+  const formTitle = document.getElementById("form-title");
+
+  loginBtn.addEventListener("click", () => {
+    loginPopup.style.display = "flex";
+    switchToLogin();
+  });
+
+  closeBtn.addEventListener("click", () => {
+    loginPopup.style.display = "none";
+  });
+
+  window.switchToRegister = function () {
+    loginForm.classList.add("hidden");
+    registerForm.classList.remove("hidden");
+    formTitle.innerText = "Register";
+  };
+
+  window.switchToLogin = function () {
+    registerForm.classList.add("hidden");
+    loginForm.classList.remove("hidden");
+    formTitle.innerText = "Login";
+  };
+});
+</script>
+</body>
+</html>
